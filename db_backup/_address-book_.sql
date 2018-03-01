@@ -7,8 +7,7 @@
 -- Server version: 5.5.27-log
 -- PHP Version: 5.4.6
 
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
+
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -38,16 +37,7 @@ CREATE TABLE IF NOT EXISTS `persons` (
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COMMENT='Persons' AUTO_INCREMENT=7 ;
 
---
--- Dumping data for table `persons`
---
 
-INSERT INTO `persons` (`ID`, `Name`, `Mobile`, `Email`, `Permanant_Address`, `Temporary_Address`) VALUES
-(3, 'Mohan Shinde', 8308381814, 'mohanshinde@gmail.com', 'Nashik Road', 'Nashik Road'),
-(5, 'Tushar Jachak', 978564203, 'tusharjachak@rediffmail.com', 'Goa', 'Goa'),
-(6, 'Prisha Jadhav', 7854693210, 'prisha@ymail.com', 'Pune', 'Pune');
-
--- --------------------------------------------------------
 
 --
 -- Table structure for table `users`
@@ -67,10 +57,3 @@ CREATE TABLE IF NOT EXISTS `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`ID`, `First_Name`, `Last_Name`, `Username`, `Password`, `Last_Login`) VALUES
-(1, 'Suraj', 'Mundalik', 'suraj2334', '827ccb0eea8a706c4c34a16891f84e7b', '18 Sep 2016 10:29 AM'),
-(2, '', '', '', 'd41d8cd98f00b204e9800998ecf8427e', '');
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
